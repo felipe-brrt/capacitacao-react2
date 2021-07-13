@@ -1,0 +1,31 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    width: 40%;
+    height: 100%;
+}
+
+.schedule{
+    background-color: blueviolet;
+    width: 30%;
+}
+
+
+
+.listCard{
+    list-style-type: none;
+}
+
+.container{
+    background-color: brown;
+}

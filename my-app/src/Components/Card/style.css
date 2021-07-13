@@ -1,0 +1,24 @@
+.cardContainer{
+    margin-top: 10px;
+    margin-left: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardContainer h3{
+    margin-bottom: 2px;
+    
+}
+
+
+.buttonContainer button{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
