@@ -1,7 +1,10 @@
 .sidebarContainer{
     background-color: black;
-    height: 1080px;
-    width: 300px;
+    width: 290px;
+    height: 100%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 5) 0px 0px 8px;
+
 }
 
 .optionContainer{
@@ -10,13 +13,25 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .optionTitle{
     font-size: 12px;
     color:  rgb(212, 212, 0);
     margin-left: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
 
+}
+
+.icon{
+    padding-right: 10px;
+}
+
+.optionContainer:hover{
+    background-color: #222;
 }
 
 #selected{

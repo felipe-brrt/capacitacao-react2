@@ -1,10 +1,8 @@
 import React from "react";
 import './style.css'
 import Calendario from '../../assets/images/calendar.svg'
-import setSelected from '../../Pages/UserInfo/index'
 
-export default function Card({props}){
-    
+export default function Card({props, setSelected}){
     return(
         <div className='cardContainer'>
             <div>
@@ -22,7 +20,7 @@ export default function Card({props}){
                 </h3>
             </div>
             <div className='buttonContainer'>
-                <button><img src={Calendario} alt="Calendario" onClick={setSelected(props.horarios)}/></button>
+                <button><img src={Calendario} alt="Calendario" onClick={setSelected}/></button>
             </div>
         </div>
     )

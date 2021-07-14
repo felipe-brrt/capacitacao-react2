@@ -1,4 +1,3 @@
-import react from 'react'
 import './style.css'
 import Lupa from '../../assets/images/search.svg'
 
