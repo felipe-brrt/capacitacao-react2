@@ -1,0 +1,110 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerCadastro{
+    background-color: #222;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    margin-left: 290px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+
+}
+
+#titleCadastro{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    padding-bottom: 30px;
+    color: rgb(212, 212, 0);
+}
+
+.box{
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 14px;
+    outline: none;
+    background-color: #111;
+    color: white;
+}
+
+.signUpBContainer{
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#signUpButton{
+    border-radius: 5px;
+    border: none;
+    background-color: #111;
+    width: 100px;
+    cursor: pointer;
+    color: rgb(212, 212, 0);
+}
+
+#signUpButton:active{
+    background-color: rgb(212, 212, 0);
+    color: black;
+}
+
+.rightBarContainer{
+    background-color: #222;
+    width: 35%;
+    color:  rgb(212, 212, 0);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: fixed;
+    margin-left: 65%;
+    
+}
+
+.rightBarTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rightBarTitle h1{
+    margin-bottom: 70px;
+    height: 60px;
+    border-bottom: 3px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

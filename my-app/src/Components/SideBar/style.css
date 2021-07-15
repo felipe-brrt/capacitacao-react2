@@ -1,5 +1,5 @@
 .sidebarContainer{
-    background-color: black;
+    background-color: #222;
     width: 290px;
     height: 100%;
     position: fixed;
@@ -31,19 +31,7 @@
 }
 
 .optionContainer:hover{
-    background-color: #222;
-}
-
-#selected{
-    height: 60px;
-    border-bottom: 3px solid #555;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #222;
-}
-
-#selected h2{
+    background-color: #333;
     color: rgb(255, 255, 0);
 
 }

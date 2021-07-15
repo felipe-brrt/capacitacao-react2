@@ -1,0 +1,18 @@
+#imgContainer img {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+#endereco{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#lema{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

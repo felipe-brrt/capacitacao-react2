@@ -1,13 +1,13 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import './style.css'
 import Card from '../../Components/Card'
 import Calendar from '../../Components/Calendar'
 import SideBar from '../../Components/SideBar'
 import Search from '../../Components/Search'
+import Header from '../../Components/Header'
 
-const oldList=[
+const defaultList=[
     {
-        id: 0,
         name: 'Felipe Barreto',
         cpf: '111.292.333-67',
         age: '21',
@@ -31,7 +31,6 @@ const oldList=[
         ]
     },
     {
-        id: 1,
         name: 'David Castro',
         cpf: '111.422.333-67',
         age: '30',
@@ -55,7 +54,6 @@ const oldList=[
         ]
     },
     {
-        id: 2,
         name: 'Luiz Almeida',
         cpf: '121.223.263-26',
         age: '47',
@@ -80,13 +78,20 @@ const oldList=[
     }
 ]
 
+
 export default function UserInfo(){
+
+    let novoFuncionario = JSON.parse(localStorage.getItem('newWorker'))
+    if(novoFuncionario){
+        defaultList.push(novoFuncionario)
+        localStorage.removeItem('newWorker')
+    }
 
     const [selected, setSelected]=useState({})
 
-    const renderList=oldList.map((item)=>(
+    const renderList=defaultList.map((item, index)=>(
 
-        <li key={item.id} className='listCard'>
+        <li key={index} className='listCard'>
             <Card props={item} setSelected={()=>{setSelected(item)}} />
         </li>
     ))
@@ -102,12 +107,7 @@ export default function UserInfo(){
           <SideBar/>
 
           <div className='information'>
-            <div id='header'>
-                <div className='infoContainer'>
-                    <h4>Fale Conosco</h4>
-                    <h4>Quem Somos</h4>
-                </div>
-            </div>
+            <Header/>
             <Search id='searchContainer'/>
 
             <div className='container'>
