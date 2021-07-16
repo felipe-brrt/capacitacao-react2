@@ -78,7 +78,6 @@ const defaultList=[
     }
 ]
 
-
 export default function UserInfo(){
 
     let novoFuncionario = JSON.parse(localStorage.getItem('newWorker'))
